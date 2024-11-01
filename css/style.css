@@ -18,7 +18,6 @@ body {
     color: #007bff; 
 }
 
-
 #about img {
     max-width: 250px;
     border-radius: 50%;
@@ -33,6 +32,9 @@ body {
 
 .project-card {
     background-color: #f8f9fa;  
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .project-card img {
@@ -40,12 +42,6 @@ body {
     width: 100%;
     object-fit: contain; 
     background-color: white; 
-}
-
-.project-card {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
 }
 
 .project-card .card-img-top {
@@ -82,8 +78,6 @@ body {
     opacity: 1; 
 }
 
-
-
 .modal-body img {
     max-height: 250px;  
     width: auto;  
@@ -93,10 +87,9 @@ body {
     object-fit: contain; 
 }
 
-.date{
+.date {
     margin-top: -15px;
 }
-
 
 .skill-category {
     width: 100%;
@@ -123,14 +116,44 @@ body {
     font-size: 15px;
 }
 
-.email{
+.email {
     display: inline;
     font-size: 15px;
 }
 
-
 @media (max-width: 768px) {
     #about .container, #skills .container, #projects .container, #contact .container {
         text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+    }
+
+    #about img, .small-img {
+        width: 150px; 
+        height: 150px;
+    }
+
+    .project-card img {
+        height: 140px; 
+    }
+
+    .skill-category {
+        padding: 10px;
+        min-height: auto;
+    }
+
+    #contact .d-flex {
+        flex-direction: row; 
+        align-items: center;
+    }
+
+    #contact a {
+        margin-bottom: 1rem;
+    }
+
+    #contact a i {
+        font-size: 2rem;
     }
 }
