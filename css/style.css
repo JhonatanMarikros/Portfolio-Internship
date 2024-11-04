@@ -1,4 +1,3 @@
-/* General adjustments for larger screens */
 header, section {
     min-height: 100vh;
     display: flex;
@@ -122,15 +121,12 @@ body {
     font-size: 15px;
 }
 
-/* Adjustments for smaller screens (320px - 642px) */
 @media (max-width: 642px) {
-    /* Navbar */
     .navbar-nav .nav-link {
         font-size: 0.8rem;
         padding: 5px 0;
     }
     
-    /* Header adjustments */
     header {
         padding: 20px 0;
     }
@@ -153,7 +149,6 @@ body {
         font-size: 0.9rem;
     }
 
-    /* About Section */
     #about h2 {
         font-size: 1.5rem;
     }
@@ -161,13 +156,11 @@ body {
     #about p {
         font-size: 0.9rem;
     }
-
-    /* Center text for small screens */
+    
     #about .container, #skills .container, #projects .container, #contact .container {
         text-align: center;
     }
     
-    /* Skills Section */
     .skill-category {
         padding: 10px;
         min-height: auto;
@@ -181,7 +174,6 @@ body {
         font-size: 0.9rem;
     }
 
-    /* Projects Section */
     .project-card img {
         height: 120px;
     }
@@ -190,12 +182,10 @@ body {
         font-size: 1.2rem;
     }
 
-    /* Modal Image */
     .modal-body img {
         max-height: 200px;
     }
 
-    /* Contact Section */
     #contact .d-flex {
         flex-direction: column;
         align-items: center;
